@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gauss and Gauss-Jordan Elimination</title>
+    <style>
+      table {
+        margin: 10px 0;
+      }
+      td {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gauss and Gauss-Jordan Elimination</h1>
+    <div>
+      <label for="size">Enter the number of variables:</label>
+      <input type="number" id="size" min="1" value="3" />
+      <button onclick="generateMatrix()">Generate Matrix</button>
+    </div>
+    <div id="matrixInput"></div>
+    <button onclick="performElimination()">Perform Elimination</button>
+    <div id="gaussSteps"></div>
+    <div id="gaussJordanSteps"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
