@@ -1,6 +1,7 @@
 function generateMatrix() {
-  const size = document.getElementById("size").value;
-  const matrixInput = document.getElementById("matrixInput");
+  //fungsi generate input matriks
+  const size = document.getElementById("size").value; //mengambil value dari input dengan id size
+  const matrixInput = document.getElementById("matrixInput"); //
   matrixInput.innerHTML = "";
 
   const table = document.createElement("table");
@@ -91,7 +92,7 @@ function performElimination() {
   gaussSteps.innerHTML = "<h2>Gauss Elimination Steps:</h2>";
   gaussJordanSteps.innerHTML = "<h2>Gauss-Jordan Elimination Steps:</h2>";
 
-  const gaussMatrix = matrix.map((row) => row.slice()); // Copy the original matrix for Gauss Elimination
+  const gaussMatrix = matrix.map((row) => row.slice());
   const resultGauss = gaussElimination(gaussMatrix, gaussSteps);
 
   const resultGaussJordan = gaussJordanElimination(
